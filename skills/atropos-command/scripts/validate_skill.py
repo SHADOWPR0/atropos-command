@@ -11,8 +11,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = (
     "SKILL.md",
-    "README.md",
-    "LICENSE",
     "templates/mission-brief.md",
     "references/persona-and-command.md",
     "references/orchestration-protocol.md",

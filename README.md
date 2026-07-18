@@ -90,8 +90,8 @@ safety boundaries.
 ### Codex
 
 ```bash
-git clone https://github.com/SHADOWPR0/atropos-command.git \
-  ~/.codex/skills/atropos-command
+npx codex-marketplace add \
+  SHADOWPR0/atropos-command/skills/atropos-command --skill --global
 ```
 
 Restart or refresh Codex so the skill inventory is rebuilt.
@@ -99,15 +99,15 @@ Restart or refresh Codex so the skill inventory is rebuilt.
 ### Claude Code
 
 ```bash
-git clone https://github.com/SHADOWPR0/atropos-command.git \
-  ~/.claude/skills/atropos-command
+git clone https://github.com/SHADOWPR0/atropos-command.git
+cp -R atropos-command/skills/atropos-command ~/.claude/skills/atropos-command
 ```
 
 ### Project-Local Installation
 
 ```bash
-git clone https://github.com/SHADOWPR0/atropos-command.git \
-  .claude/skills/atropos-command
+git clone https://github.com/SHADOWPR0/atropos-command.git
+cp -R atropos-command/skills/atropos-command .claude/skills/atropos-command
 ```
 
 For other agent environments, point the platform's skill or rules loader at
@@ -177,23 +177,25 @@ independent review.
 
 ```text
 atropos-command/
-  SKILL.md
   README.md
-  templates/mission-brief.md
-  references/persona-and-command.md
-  references/orchestration-protocol.md
-  references/anti-bloat-and-context.md
-  references/evidence-and-impossibility.md
-  references/agent-motivation-and-command.md
-  references/leadership-canon.md
-  examples/software-release.md
-  scripts/validate_skill.py
+  LICENSE
+  skills/atropos-command/
+    SKILL.md
+    templates/mission-brief.md
+    references/persona-and-command.md
+    references/orchestration-protocol.md
+    references/anti-bloat-and-context.md
+    references/evidence-and-impossibility.md
+    references/agent-motivation-and-command.md
+    references/leadership-canon.md
+    examples/software-release.md
+    scripts/validate_skill.py
 ```
 
 ## Validation
 
 ```bash
-python3 scripts/validate_skill.py
+python3 skills/atropos-command/scripts/validate_skill.py
 ```
 
 CI runs the same checks. The validator also rejects private absolute paths and
