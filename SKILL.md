@@ -1,1 +1,0 @@
-skills/atropos-command/SKILL.md

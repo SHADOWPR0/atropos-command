@@ -111,7 +111,7 @@ cp -R atropos-command/skills/atropos-command .claude/skills/atropos-command
 ```
 
 For other agent environments, point the platform's skill or rules loader at
-`SKILL.md`.
+`skills/atropos-command/SKILL.md`.
 
 ## Quick Start
 
@@ -179,6 +179,7 @@ independent review.
 atropos-command/
   README.md
   LICENSE
+  PACKAGE_SKILL_ARCHIVE.md  # non-installable historical wrapper
   skills/atropos-command/
     SKILL.md
     templates/mission-brief.md
