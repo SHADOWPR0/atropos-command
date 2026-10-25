@@ -87,15 +87,6 @@ safety boundaries.
 
 ## Install
 
-### Codex
-
-```bash
-npx codex-marketplace add \
-  SHADOWPR0/atropos-command/skills/atropos-command --skill --global
-```
-
-Restart or refresh Codex so the skill inventory is rebuilt.
-
 ### Claude Code
 
 ```bash
@@ -201,15 +192,6 @@ python3 skills/atropos-command/scripts/validate_skill.py
 
 CI runs the same checks. The validator also rejects private absolute paths and
 private operator material from the public package.
-
-## Codex Marketplace
-
-The repository uses the marketplace-compatible standalone skill path:
-
-`SHADOWPR0/atropos-command/skills/atropos-command`
-
-See [MARKETPLACE_SUBMISSION.md](MARKETPLACE_SUBMISSION.md) for the public review
-target and verified submission packet.
 
 ## Boundaries
 
